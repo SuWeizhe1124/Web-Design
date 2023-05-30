@@ -1,2 +1,3 @@
 # Web-Design
-[許可證]([https://google.com](https://github.com/SuWeizhe1124/Web-Design/blob/main/LICENSE.md) "游標顯示")
+
+### [許可證](https://lenovomi0403.github.io/Resume/](https://github.com/SuWeizhe1124/Web-Design/blob/main/LICENSE.md))
