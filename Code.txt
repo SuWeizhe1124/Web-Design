@@ -78,6 +78,91 @@ target="_parent" - 意思是在父層視窗開啟
     <audio id="player" preload="auto" autoplay loop>
         <source src="music/apple.mp3" type="audio/mp3">
     </audio>
+
+***
+<!--button-->
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()"> <img  src="5-19-1.jpg"><br>Click me to display Date and Time.</button>
+<p id="demo"></p>
+
+
+***
+<!--button-->
+<input type="button" style="width:858px;height:452px;background-image:url('5-19-1.jpg');"onclick="document.getElementById('demo1').innerHTML = Date()"></input>
+
+<p id="demo1"></p>
+
+***
+
+//--按鈕--//
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()"> <img  src="5-19-1.jpg"><br>Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<input type="button" style="width:858px;height:452px;background-image:url('5-19-1.jpg');"onclick="document.getElementById('demo1').innerHTML = Date()"></input>
+
+//----標準框下按鈕------//
+<fieldset>
+  <legend style="	text-align: center;">ボタンコントロール</legend>
+<input type="button" style=" width:100px;height:50px;background-image:url('5-19-1.jpg');"onclick="document.getElementById('demo1').innerHTML = Date()"></input>
+  
+</fieldset>
+
+ //----框框代碼------//
+  <!--https://www.runoob.com/try/try.php?filename=trycss3_box-sizing_new-->
+  <div class="div1"style=
+"width: 300px;
+    height: 100px;
+    border: 1px solid blue;">ボタンコントロール </div>
+***
+
+<!--不貼牆壁的代碼  margin: 20px  https://www.wibibi.com/info.php?tid=110 -->
+
+<fieldset style=" 
+width: 300px; 
+ height: 150px;
+ margin: 20px 20px 20px 20px;
  
-	
+ ">
+  <legend style="	text-align: center; ">ボタンコントロール</legend>
+
+	<!--上--><!--fieldset width: 300px; OK-->
+<input  type="button" style="  
+width: 60px; 
+ height: 60px;  
+margin:0px 150px 5px ;
+ background-image:url('5-19-1.jpg');
+ 
+ "onclick="document.getElementById('demo1').innerHTML = Date()">
+ </input >
+ 
+  <br> <!--下一行 margin:上 右 下 左 -->
+ <!--左-->
+ <input type="button" style="  
+width: 60px; 
+ height: 60px; 
+ margin: 0px 10px 0px  75px;
+ background-image:url('5-19-1.jpg');
+ "onclick="document.getElementById('demo1').innerHTML = Date()">
+
+ <!--下-->
+ <input type="button" style="  
+width: 60px; 
+ height: 60px; 
+ margin: 0px 10px 0px 0px;
+ background-image:url('5-19-1.jpg');
+ "onclick="document.getElementById('demo1').innerHTML = Date()">
+ 
+ <!--右-->
+ <input type="button" style="  
+width: 60px; 
+ height: 60px; 
+ margin: 0px 10px 0px 0px;
+ background-image:url('5-19-1.jpg');
+ "onclick="document.getElementById('demo1').innerHTML = Date()">
+  
+</fieldset>
+
  
