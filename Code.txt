@@ -95,7 +95,7 @@ onclick="document.getElementById('demo').innerHTML = Date()"> <img  src="5-19-1.
 
 ***
 
-//--按鈕--//
+//--按鈕+圖片--//
 <button type="button"
 onclick="document.getElementById('demo').innerHTML = Date()"> <img  src="5-19-1.jpg"><br>Click me to display Date and Time.</button>
 
@@ -118,7 +118,7 @@ onclick="document.getElementById('demo').innerHTML = Date()"> <img  src="5-19-1.
     border: 1px solid blue;">ボタンコントロール </div>
 ***
 
-<!--不貼牆壁的代碼  margin: 20px  https://www.wibibi.com/info.php?tid=110 -->
+<!--不貼牆壁的代碼  margin: 20px  https://www.wibibi.com/info.php?tid=110 按鈕件的代碼 -->
 
 <fieldset style=" 
 width: 300px; 
@@ -164,5 +164,58 @@ width: 60px;
  "onclick="document.getElementById('demo1').innerHTML = Date()">
   
 </fieldset>
+
+
+**** 主要值得注意的代碼 - <p><script> 這邊 JavaScript 這邊處理掉
+
+<p id="demo"></p>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>//--這裡是瀏覽器出問題顯示的文字--//
+<p><script> document.getElementById("demo").innerHTML = "Hello JavaScript!";</script></p>
+ 
+
+//--------基本正確寫法---//
+<p id="demo"><script>document.getElementById("demo").innerHTML = 'John Doe';</script></p>
+
+
+
+//--------基本寫法 動畫完成後寫法---//
+
+  <!--top:0 測試代碼關係   location.href = "ContentElements.html"; -->
+  
+        <video   autoplay  
+		style="object-fit:cover;   
+		position:absolute;
+		top: 10;
+		left: 0; 
+		width:100%;
+		height:100%;" 
+		preload="auto"
+		src="OP3.mp4" 
+		type="video/mp4"
+		
+		 id="video">
+
+		<script> 
+              
+		  < 強制須告一個 記載時間> 
+		  var audio = new Audio('OP3.mp4')
+           // 元数据已加载
+          audio.addEventListener("loadedmetadata", function (e) {
+             let duration = audio.duration; 
+		    
+		  var x = document.getElementById("video").duration;   < 配合ID一個 記載時間> 
+                 //-duration-或--duration-- 取他的值//
+	        document.getElementById("demo").innerHTML =x+"時間 填寫到 <meta> + content=值";  		 
+		  
+		  });
+         
+
+
+		</script>
+		  <!--top:0 https://ithelp.ithome.com.tw/articles/10207090-->
+		<meta http-equiv="refresh" content="92.508299; url=ContentElements.html">
+        </video>
+	<!--ボタン-- 通常、映画が終わった後またはゲーム モード ボタンが反応して次の HTML ページを通知します-->		
+
 
  
