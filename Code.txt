@@ -217,5 +217,23 @@ width: 60px;
         </video>
 	<!--ボタン-- 通常、映画が終わった後またはゲーム モード ボタンが反応して次の HTML ページを通知します-->		
 
+//----------上傳檔案 HTML -----------------------//
 
+
+<fieldset style=" 
+width: 100px; 
+height: 50px;
+ margin: 20px 20px 20px 20px;
+ ">
+ <legend style="	text-align: center;">アップロード</legend>
+ 
+ <!--使用 <input type="file" /> 取得使用者想要上傳的檔案：
+multiple 屬性可以一次上傳多個檔案
+accept 屬性可以限制上傳檔案的類型
+!-->
+
+<input type="file" id="file-uploader">
+ </fieldset>
+
+ //---------------------------------//
  
